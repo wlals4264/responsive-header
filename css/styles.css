@@ -27,7 +27,7 @@ body {
 }
 
 .navbar__logo img {
-  width: 50px;
+  width: 40px;
 }
 
 .navbar__menu,
@@ -46,6 +46,14 @@ body {
   color: var(--background-color);
   background-color: var(--accent-color);
   border-radius: 4px;
+}
+
+.navbar__toggleBtn {
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  font-size: 20px;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,5 +75,9 @@ body {
   .navbar__menu li {
     width: 100%;
     text-align: center;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
   }
 }
